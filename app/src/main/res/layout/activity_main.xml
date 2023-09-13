@@ -9,59 +9,88 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:context=".MainActivity">
 
         <Button
             android:id="@+id/nearest_vet_facility"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="120dp"
             android:text="Nearest Vet Facility"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="341dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/case_history" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
             android:text="ASARA"
             android:textSize="45sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.092" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/case_history"
             android:layout_width="172dp"
             android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="120dp"
             android:text="Case History"
-            tools:layout_editor_absoluteX="124dp"
-            tools:layout_editor_absoluteY="250dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registered_animals" />
 
         <Button
             android:id="@+id/sos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="140dp"
             android:text="SOS"
-            tools:layout_editor_absoluteX="158dp"
-            tools:layout_editor_absoluteY="547dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_profile" />
 
         <Button
             android:id="@+id/registered_animals"
-            android:layout_width="wrap_content"
+            android:layout_width="174dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="120dp"
             android:text="Registered animals "
-            tools:layout_editor_absoluteX="124dp"
-            tools:layout_editor_absoluteY="155dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <Button
             android:id="@+id/my_profile"
             android:layout_width="146dp"
             android:layout_height="52dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="120dp"
             android:text="My Profile"
-            tools:layout_editor_absoluteX="132dp"
-            tools:layout_editor_absoluteY="443dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nearest_vet_facility" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
