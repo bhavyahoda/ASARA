@@ -49,7 +49,6 @@
             android:value="AIzaSyBwn6jwiNka-gFyOSGpVlz3FsaXPAbNXSs" />
 
         <activity android:name=".Profile" />
-        <activity android:name=".Sos" />
         <activity android:name=".Login"/>
         <activity android:name=".Register"/>
     </application>
