@@ -24,6 +24,16 @@ public class LoginRegisterActivity extends AppCompatActivity {
         TextView loginButton = findViewById(R.id.loginButtonText);
         TextView resisterAsOrgButton = findViewById(R.id.registerAsOrgText);
         TextView resisterAsVolunteerButton = findViewById(R.id.registerAsVolunteerText);
+
+        ImageView backArrow = findViewById(R.id.backArrow);
+
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginRegisterActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
         loginImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

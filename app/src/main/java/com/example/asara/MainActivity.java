@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -24,6 +26,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        CardView authenticateCard = findViewById(R.id.authenticateCard);
+        
+        authenticateCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LoginRegisterActivity.class);
+                startActivity(intent);
+            }
+        });
 //
 //        my_profile = findViewById(R.id.my_profile);
 //        case_history = findViewById(R.id.case_history);
