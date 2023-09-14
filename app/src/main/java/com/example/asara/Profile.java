@@ -1,12 +1,11 @@
 package com.example.asara;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 public class Profile extends AppCompatActivity {
     private Button Login, Register;
@@ -20,13 +19,15 @@ public class Profile extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent= new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
             }
         });
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent= new Intent(getApplicationContext(), Register.class);
+                startActivity(intent);
             }
         });
     }
