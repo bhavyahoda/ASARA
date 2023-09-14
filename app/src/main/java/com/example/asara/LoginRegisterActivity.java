@@ -22,7 +22,8 @@ public class LoginRegisterActivity extends AppCompatActivity {
         loginImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(LoginRegisterActivity.this, "Logging in", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginRegisterActivity.this, Login.class);
+                startActivity(intent);
             }
         });
 
