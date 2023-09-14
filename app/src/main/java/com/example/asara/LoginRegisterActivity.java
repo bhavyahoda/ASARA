@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginRegisterActivity extends AppCompatActivity {
@@ -19,9 +21,9 @@ public class LoginRegisterActivity extends AppCompatActivity {
         ImageView loginImageView = findViewById(R.id.loginImageView);
         ImageView registerAsVolunteer = findViewById(R.id.registerAsVolunteer);
         ImageView registerAsOrg = findViewById(R.id.registerAsOrg);
-        Button loginButton = findViewById(R.id.loginButton);
-        Button resisterAsOrgButton = findViewById(R.id.registerAsOrgButton);
-        Button resisterAsVolunteerButton = findViewById(R.id.registerAsVolunteerButton);
+        TextView loginButton = findViewById(R.id.loginButtonText);
+        TextView resisterAsOrgButton = findViewById(R.id.registerAsOrgText);
+        TextView resisterAsVolunteerButton = findViewById(R.id.registerAsVolunteerText);
         loginImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

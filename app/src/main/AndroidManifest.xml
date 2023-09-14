@@ -34,16 +34,16 @@
             android:name=".MainActivity"
             android:exported="true">
         </activity>
-    <activity android:name=".VolunteerRegistrationActivity"/>
-        <activity android:name=".VetRegistrationActivity"/>
-        <activity android:name=".LoginRegisterActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-	<activity android:name=".CaseHistoryActivity">
+        <activity android:name=".VolunteerRegistrationActivity"/>
+            <activity android:name=".VetRegistrationActivity"/>
+            <activity android:name=".LoginRegisterActivity"
+                android:exported="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+        <activity android:name=".CaseHistoryActivity">
             <!-- Define intent filters if needed -->
         </activity>
         <activity android:name=".NearestVetFacilityActivity">
@@ -52,7 +52,8 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBwn6jwiNka-gFyOSGpVlz3FsaXPAbNXSs" />
-
+        <activity android:name=".Login"
+            android:exported="true"/>
         <activity android:name=".Profile" />
         <activity android:name=".Register"/>
     </application>
