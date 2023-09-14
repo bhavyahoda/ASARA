@@ -1,97 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@drawable/light_bg">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".MainActivity">
-
-        <Button
-            android:id="@+id/nearest_vet_facility"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="43dp"
-            android:layout_marginEnd="120dp"
-            android:text="Nearest Vet Facility"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/case_history" />
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        >
 
         <TextView
-            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You can be a 'RESCUER' too!"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorPrimaryDark"
+                >
+            </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <LinearLayout
+            android:id="@+id/imageContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="57dp"
-            android:text="ASARA"
-            android:textSize="45sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:orientation="horizontal"
+            >
 
-        <Button
-            android:id="@+id/case_history"
-            android:layout_width="172dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="120dp"
-            android:text="Case History"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/registered_animals" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="13dp"
+                android:layout_marginBottom="30dp"
+                >
 
-        <Button
-            android:id="@+id/sos"
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/rescue1">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="13dp"
+                android:layout_marginBottom="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/rescue2">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="13dp"
+                android:layout_marginBottom="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/rescue3">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="13dp"
+                android:layout_marginBottom="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/rescue4">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="13dp"
+                android:layout_marginBottom="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/rescue5">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="120dp"
-            android:layout_marginBottom="140dp"
-            android:text="SOS"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/my_profile" />
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="13dp"
+            android:layout_marginBottom="30dp"
+            >
 
-        <Button
-            android:id="@+id/registered_animals"
-            android:layout_width="174dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="120dp"
-            android:text="Registered animals "
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                android:src="@drawable/rescue6">
+            </ImageView>
 
-        <Button
-            android:id="@+id/my_profile"
-            android:layout_width="146dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="43dp"
-            android:layout_marginEnd="120dp"
-            android:text="My Profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nearest_vet_facility" />
+        </androidx.cardview.widget.CardView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+
+
+</LinearLayout>
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/dob_outline"-->
+<!--        >-->
+
+<!--    </ImageView>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:context=".MainActivity">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/nearest_vet_facility"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="120dp"-->
+<!--            android:layout_marginTop="43dp"-->
+<!--            android:layout_marginEnd="120dp"-->
+<!--            android:text="Nearest Vet Facility"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/case_history" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="57dp"-->
+<!--            android:text="ASARA"-->
+<!--            android:textSize="45sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.494"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/case_history"-->
+<!--            android:layout_width="172dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginStart="120dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:layout_marginEnd="120dp"-->
+<!--            android:text="Case History"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/registered_animals" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/sos"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="120dp"-->
+<!--            android:layout_marginTop="26dp"-->
+<!--            android:layout_marginEnd="120dp"-->
+<!--            android:layout_marginBottom="140dp"-->
+<!--            android:text="SOS"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/my_profile" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/registered_animals"-->
+<!--            android:layout_width="174dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="120dp"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:layout_marginEnd="120dp"-->
+<!--            android:text="Registered animals "-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/my_profile"-->
+<!--            android:layout_width="146dp"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:layout_marginStart="120dp"-->
+<!--            android:layout_marginTop="43dp"-->
+<!--            android:layout_marginEnd="120dp"-->
+<!--            android:text="My Profile"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/nearest_vet_facility" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
