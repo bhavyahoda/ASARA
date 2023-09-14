@@ -2,6 +2,7 @@ package com.example.asara;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -27,7 +28,6 @@ import java.util.List;
 public class NearestVetFacilityActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
-
     private MapView mapView;
     private GoogleMap googleMap;
     private FusedLocationProviderClient fusedLocationClient;
@@ -38,6 +38,9 @@ public class NearestVetFacilityActivity extends AppCompatActivity implements OnM
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nearest_vet_facility);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            checkLocationPermission();
+        }
         // Initialize the MapView
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
@@ -94,6 +97,35 @@ public class NearestVetFacilityActivity extends AppCompatActivity implements OnM
                         }
                     });
         }
+    }
+
+    public boolean checkLocationPermission() {
+        //first checking the permission was granted or not
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            //if permission is not granted we ask for the permission an educational message is shown as to why the permission is required
+            //this will return true if the user had asked for the permission before and denied for it,and is now trying to access the feature again
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)) {
+                //after reading the message the user knows why we need permission now the diluoge box appears to
+                //to the user to choose the permission and this time we check it with the request code to match that the permision is granted for the work we want to o ith the permission
+                //new string will take a array of permission that we have to give
+
+                ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST_CODE);
+
+            }
+
+            else {
+                //if we dont want to show the explaination then we directly request for the permission
+                ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST_CODE);
+            }
+            //permission denied hogaya ab they cannot access the current location
+            //if the permission was asked before by the app and the user had choosen the dont ask again vala option
+            return false;
+
+        }
+        //if the permission is granted directly true bejh dega
+        else
+            return true;
+
     }
 
     private void showNearestPetClinics(LatLng userLocation) {
