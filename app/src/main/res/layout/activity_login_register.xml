@@ -85,6 +85,7 @@
                 android:src="@drawable/dog2">
             </ImageView>
             <Button
+                android:id="@+id/registerAsOrgButton"
                 android:layout_marginTop="20dp"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
@@ -110,6 +111,7 @@
 
             </ImageView>
             <Button
+                android:id="@+id/registerAsVolunteerButton"
                 android:layout_marginTop="20dp"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"

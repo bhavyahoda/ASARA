@@ -19,7 +19,17 @@ public class LoginRegisterActivity extends AppCompatActivity {
         ImageView loginImageView = findViewById(R.id.loginImageView);
         ImageView registerAsVolunteer = findViewById(R.id.registerAsVolunteer);
         ImageView registerAsOrg = findViewById(R.id.registerAsOrg);
+        Button loginButton = findViewById(R.id.loginButton);
+        Button resisterAsOrgButton = findViewById(R.id.registerAsOrgButton);
+        Button resisterAsVolunteerButton = findViewById(R.id.registerAsVolunteerButton);
         loginImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginRegisterActivity.this, Login.class);
+                startActivity(intent);
+            }
+        });
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginRegisterActivity.this, Login.class);
@@ -34,11 +44,26 @@ public class LoginRegisterActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        resisterAsOrgButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginRegisterActivity.this, VetRegistrationActivity.class);
+                startActivity(intent);
+            }
+        });
 
         registerAsVolunteer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(LoginRegisterActivity.this, "Registering as volunteer", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginRegisterActivity.this, VolunteerRegistrationActivity.class);
+                startActivity(intent);
+            }
+        });
+        resisterAsVolunteerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginRegisterActivity.this, VolunteerRegistrationActivity.class);
+                startActivity(intent);
             }
         });
         
