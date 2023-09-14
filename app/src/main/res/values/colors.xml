@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#B289F3</color>
+    <color name="colorPrimaryDark">#966FD6</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lightGrey">#EDEDED</color>
+    <color name="red">#9F0B0B</color>
+    <color name="launcher_background">#ECBFFF</color>
 </resources>
