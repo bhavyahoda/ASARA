@@ -29,27 +29,27 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+        </activity>
+    <activity android:name=".VolunteerRegistrationActivity"/>
+        <activity android:name=".VetRegistrationActivity"/>
+        <activity android:name=".LoginRegisterActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".NearestVetFacilityActivity">
-            <!-- Define intent filters if needed -->
         </activity>
         <activity android:name=".CaseHistoryInternalActivity">
-            <!-- Define intent filters if needed -->
         </activity>
         <activity android:name=".RegisteredAnimalsActivity">
-            <!-- Define intent filters if needed -->
         </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBwn6jwiNka-gFyOSGpVlz3FsaXPAbNXSs" />
 
         <activity android:name=".Profile" />
-        <activity android:name=".Sos" />
-        <activity android:name=".Login"/>
         <activity android:name=".Register"/>
     </application>
 
