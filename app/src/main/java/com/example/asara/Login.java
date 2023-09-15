@@ -5,6 +5,8 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
@@ -26,12 +28,31 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ImageView backArrow = findViewById(R.id.loginScreenTopBackArrow);
+        Button sign_in_button = findViewById(R.id.sign_in_button);
+        EditText email_sign_in = findViewById(R.id.email_sign_in);
 
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this, LoginRegisterActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        //using org@org.com as an email credential for an org
+        //using volunteer@vol.com for volunteer
+        sign_in_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String email = email_sign_in.getText().toString();
+                //organisation account
+                if(email == "org@org.com") {
+
+                }
+                //volunteer account
+                else {
+
+                }
             }
         });
 
