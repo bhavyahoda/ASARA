@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.asara">
 
     <uses-feature
@@ -12,12 +13,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.NFC" />
 
-    <uses-permission
-        android:name="android.permission.ACCESS_FINE_LOCATION"
-        tools:ignore="CoarseFineLocation" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
 
     <application
@@ -37,11 +34,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-	<activity android:name=".CaseHistoryActivity">
+        <activity android:name=".NearestVetFacilityActivity">
             <!-- Define intent filters if needed -->
         </activity>
-        <activity android:name=".NearestVetFacilityActivity">
+        <activity android:name=".CaseHistoryInternalActivity">
+            <!-- Define intent filters if needed -->
+        </activity>
+        <activity android:name=".RegisteredAnimalsActivity">
             <!-- Define intent filters if needed -->
         </activity>
         <meta-data
