@@ -46,12 +46,14 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 String email = email_sign_in.getText().toString();
                 //organisation account
-                if(email == "org@org.com") {
-
+                if(email.equals("org@org.com")) {
+                    Intent intent = new Intent(Login.this, OrgSignedInActivity.class);
+                    startActivity(intent);
                 }
                 //volunteer account
                 else {
-
+                    Intent intent = new Intent(Login.this, VolunteerSignedinActivity.class);
+                    startActivity(intent);
                 }
             }
         });

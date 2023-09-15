@@ -100,8 +100,7 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/rescue3">
-                </ImageView>
+                    android:src="@drawable/rescue3"></ImageView>
 
             </androidx.cardview.widget.CardView>
 
@@ -204,7 +203,7 @@
                     android:layout_marginTop="10dp"
                     android:text="Authenticate "
                     android:textSize="15dp"
-                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
                     android:layout_centerInParent="true"
                     android:textColor="#6542A8" />
             </androidx.cardview.widget.CardView>
@@ -232,7 +231,7 @@
                     android:layout_marginTop="10dp"
                     android:text="Nearest Vet"
                     android:textSize="15dp"
-                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
                     android:layout_centerInParent="true"
                     android:textColor="#6542A8" />
             </androidx.cardview.widget.CardView>
@@ -272,7 +271,7 @@
                     android:layout_marginTop="10dp"
                     android:text="Report now"
                     android:textSize="15dp"
-                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
                     android:layout_centerInParent="true"
                     android:textColor="#6542A8" />
             </androidx.cardview.widget.CardView>
@@ -297,12 +296,12 @@
                     android:id="@+id/gridText4"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Add option "
-                    android:textSize="15dp"
-                    android:layout_marginLeft="15dp"
                     android:layout_centerInParent="true"
-                    android:textColor="#6542A8" />
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Add option"
+                    android:textColor="#6542A8"
+                    android:textSize="15dp" />
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
