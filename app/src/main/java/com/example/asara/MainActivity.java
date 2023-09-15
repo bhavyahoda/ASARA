@@ -20,6 +20,7 @@ import java.io.InputStreamReader;
 
 public class MainActivity extends AppCompatActivity {
     Button registered_animals, case_history, nearest_vet_facility,my_profile,sos;
+    CreateLoadLocalData createLoadLocalData;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         my_profile = findViewById(R.id.my_profile);
         case_history = findViewById(R.id.case_history);
         nearest_vet_facility = findViewById(R.id.nearest_vet_facility);
+        registered_animals = findViewById(R.id.registered_animals);
         Resources resources = getResources();
         InputStream inputStream = resources.openRawResource(R.raw.dog_model); // Replace with your JSON file name
         try {
@@ -54,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
             // Handle exceptions appropriately
         }
 
+        createLoadLocalData = new CreateLoadLocalData(this);
+        createLoadLocalData.createAndInsertAnimalTable();
 
         my_profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         case_history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CaseHistoryActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CaseHistoryInternalActivity.class);
                 startActivity(intent);
             }
         });
@@ -79,6 +83,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        registered_animals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RegisteredAnimalsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

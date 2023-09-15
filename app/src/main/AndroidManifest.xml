@@ -13,12 +13,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.NFC" />
 
-    <uses-permission
-        android:name="android.permission.ACCESS_FINE_LOCATION"
-        tools:ignore="CoarseFineLocation" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
 
     <application
@@ -43,11 +39,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-	<activity android:name=".CaseHistoryActivity">
-            <!-- Define intent filters if needed -->
-        </activity>
         <activity android:name=".NearestVetFacilityActivity">
-            <!-- Define intent filters if needed -->
+        </activity>
+        <activity android:name=".CaseHistoryInternalActivity">
+        </activity>
+        <activity android:name=".RegisteredAnimalsActivity">
         </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
