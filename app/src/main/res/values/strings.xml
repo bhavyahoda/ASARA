@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ASARA</string>
+    <string name="profile_image_description">Profile Image</string>
+    <string name="username_placeholder">Username Placeholder</string>
+    <string name="email_placeholder">Email Placeholder</string>
+    <string name="edit_profile">Edit Profile</string>
+
+
 </resources>
