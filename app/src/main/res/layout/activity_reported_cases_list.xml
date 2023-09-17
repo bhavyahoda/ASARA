@@ -4,49 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/light_bg">
+    tools:context=".ReportedCasesListActivity"
+    android:orientation="vertical">
 
-
-    <LinearLayout
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimaryDark"
+        app:tabIndicator="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:id="@+id/tab_layout"
+        app:tabTextColor="@color/material_dynamic_neutral_variant80">
+    </com.google.android.material.tabs.TabLayout>
 
-        android:background="@color/colorPrimaryDark">
-        <ImageView
-            android:id="@+id/loginScreenTopBackArrow"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/leftarrowwhite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp">
-        </ImageView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reported cases"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:layout_marginLeft="15dp"
-            >
-        </TextView>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
-
-        <LinearLayout>
-
-    </LinearLayout>
-
+        android:id="@+id/viewPager"
+        >
+    </androidx.viewpager.widget.ViewPager>
 </LinearLayout>
