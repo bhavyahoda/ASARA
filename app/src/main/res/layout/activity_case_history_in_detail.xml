@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaseHistoryInDetailActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        >
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/leftarrowwhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Case ID 1333"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="15dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friends for Animals(NGO)"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="15dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <ViewSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewSwitcher"
+        >
+
+        <TextView
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Submit rating "
+            android:textSize="15dp"
+            android:paddingBottom="10dp"
+            >
+
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/check_icon"
+            android:layout_gravity="center"
+            >
+
+        </ImageView>
+
+
+    </ViewSwitcher>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:background="@drawable/light_bg"
+        >
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D2BBFF">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text="Date" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Description" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Doctor" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text="June 15, 2023" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Surgery done" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dr. Amita Patki" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text="June 16, 2023" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Crutches Attached to animal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dr. Amita Patki" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text="June 20, 2023" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Animaml exercises" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dr. Amita Patki" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text="June 20, 2023" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Medicatiob started- Hatvet tablest" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dr. Amita Patki" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

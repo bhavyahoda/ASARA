@@ -1,7 +1,9 @@
 package com.example.asara;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -14,6 +16,9 @@ public class ActiveCasesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_active_cases, container, false);
+        View view =  inflater.inflate(R.layout.fragment_active_cases, container, false);
+        CardView caseID3123 = view.findViewById(R.id.caseID3123);
+
+        return view;
     }
 }
