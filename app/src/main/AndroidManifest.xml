@@ -30,6 +30,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASARA">
         <activity
+            android:name=".LocationSimulationActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReportedCasesActivity"
             android:exported="false" />
         <activity
