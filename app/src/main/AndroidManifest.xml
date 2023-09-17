@@ -30,6 +30,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASARA">
         <activity
+            android:name=".ReportedCasesListActivity"
+            android:exported="false" />
+        <activity
             android:name=".MapImg3Activity"
             android:exported="false" />
         <activity

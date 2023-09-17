@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
+import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
@@ -41,7 +42,7 @@ public class VolunteerSignedinActivity extends AppCompatActivity {
         reportedCases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(VolunteerSignedinActivity.this, ReportedCasesActivity.class);
+                Intent intent = new Intent(VolunteerSignedinActivity.this, ReportedCasesListActivity.class);
                 startActivity(intent);
             }
         });
