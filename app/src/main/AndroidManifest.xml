@@ -30,6 +30,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASARA">
         <activity
+            android:name=".TrackMyActiveCases"
+            android:exported="false" />
+        <activity
             android:name=".LocationSimulationActivity"
             android:exported="false" />
         <activity
@@ -68,6 +71,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -84,7 +88,10 @@
 
             <!-- Define intent filters if needed -->
         </activity>
+        <activity android:name=".CaseDetailsActivity">
 
+            <!-- Define intent filters if needed -->
+        </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBwn6jwiNka-gFyOSGpVlz3FsaXPAbNXSs" />
