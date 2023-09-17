@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         CardView authenticateCard = findViewById(R.id.authenticateCard);
         CardView reportNowCard = findViewById(R.id.reportNowCard);
         CardView aboutUsCard = findViewById(R.id.aboutUsCard);
+        CardView nearestVetCard = findViewById(R.id.nearestVnet);
+
+
         authenticateCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                 }
+            }
+        });
+        nearestVetCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, showNearestVetsMaps.class);
+                startActivity(intent);
             }
         });
     }

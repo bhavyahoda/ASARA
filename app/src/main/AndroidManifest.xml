@@ -46,6 +46,12 @@
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />
         <activity
+            android:name=".ReportedCasesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".VolunteerSignedinActivity"
             android:exported="false" />
         <activity
@@ -68,7 +74,7 @@
         <activity
             android:name=".LoginRegisterActivity"
             android:exported="true" />
-        <activity android:name=".CaseHistoryActivity">
+        <activity android:name=".showNearestVetsMaps">
 
             <!-- Define intent filters if needed -->
         </activity>
