@@ -34,6 +34,10 @@
             android:exported="false" />
         <activity
             android:name=".ReportedCasesListActivity"
+            android:name=".TrackMyActiveCases"
+            android:exported="false" />
+        <activity
+            android:name=".LocationSimulationActivity"
             android:exported="false" />
         <activity
             android:name=".MapImg3Activity"
@@ -88,7 +92,10 @@
 
             <!-- Define intent filters if needed -->
         </activity>
+        <activity android:name=".CaseDetailsActivity">
 
+            <!-- Define intent filters if needed -->
+        </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBwn6jwiNka-gFyOSGpVlz3FsaXPAbNXSs" />
