@@ -30,6 +30,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASARA">
         <activity
+            android:name=".CaseHistoryInDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportedCasesListActivity"
             android:name=".TrackMyActiveCases"
             android:exported="false" />
         <activity
