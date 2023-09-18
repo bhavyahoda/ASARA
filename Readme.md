@@ -19,3 +19,9 @@ By leveraging AI technology, we can create a system that matches the animal in d
 Resources used - 
 https://github.com/piyush-gupta1999/ComputerVisionService
 SceneXplain - Leading AI Solution for Image Captions and Video Summaries (jina.ai) 
+https://learn.microsoft.com/en-us/azure/azure-functions/streaming-logs?tabs=azure-portal
+https://learn.microsoft.com/en-us/azure/iot-develop/quickstart-send-telemetry-iot-hub?pivots=programming-language-python
+https://learn.microsoft.com/en-us/python/api/azure-maps-route/azure.maps.route?view=azure-python-preview
+https://learn.microsoft.com/en-us/python/api/azure-maps-route/azure.maps.route.models.latlon?view=azure-python-preview
+https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/realtime-analytics-vehicle-iot
+https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python?pivots=python-mode-configuration
