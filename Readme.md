@@ -14,3 +14,8 @@ By leveraging AI technology, we can create a system that matches the animal in d
 
 
 ![Screenshot 2023-09-18 110741](https://github.com/bhavyahoda/ASARA/assets/55077612/ca73db67-85ba-495a-a615-51fb4f87a000)
+
+
+Resources used - 
+https://github.com/piyush-gupta1999/ComputerVisionService
+SceneXplain - Leading AI Solution for Image Captions and Video Summaries (jina.ai) 
